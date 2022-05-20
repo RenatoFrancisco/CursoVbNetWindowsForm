@@ -73,10 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmTelaPrincipal.Designer.vb">
-      <DependentUpon>FrmTelaPrincipal.vb</DependentUpon>
+    <Compile Include="FrmTelaPrincipal02.Designer.vb">
+      <DependentUpon>FrmTelaPrincipal02.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmTelaPrincipal.vb">
+    <Compile Include="FrmTelaPrincipal02.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,8 +96,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmTelaPrincipal.resx">
-      <DependentUpon>FrmTelaPrincipal.vb</DependentUpon>
+    <EmbeddedResource Include="FrmTelaPrincipal02.resx">
+      <DependentUpon>FrmTelaPrincipal02.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

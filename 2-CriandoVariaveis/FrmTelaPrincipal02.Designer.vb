@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmTelaPrincipal
+Partial Class FrmTelaPrincipal02
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -20,7 +20,7 @@ Partial Class FrmTelaPrincipal
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.BtnPrincipal = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -39,20 +39,20 @@ Partial Class FrmTelaPrincipal
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(28, 38)
+        Me.Label1.Location = New System.Drawing.Point(22, 20)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(176, 18)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "1 - Primeiro Programa"
+        Me.Label1.Size = New System.Drawing.Size(165, 18)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "2 - Criando Variáveis"
         '
-        'FrmTelaPrincipal
+        'FrmTelaPrincipal02
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnPrincipal)
-        Me.Name = "FrmTelaPrincipal"
+        Me.Name = "FrmTelaPrincipal02"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Aplicação Alô Mundo"
         Me.ResumeLayout(False)
