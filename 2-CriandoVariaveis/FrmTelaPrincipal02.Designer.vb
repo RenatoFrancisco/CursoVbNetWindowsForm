@@ -22,18 +22,19 @@ Partial Class FrmTelaPrincipal02
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.BtnPrincipal = New System.Windows.Forms.Button()
+        Me.BtnNumerosInteiros = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.BtnPontoFlutuante = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'BtnPrincipal
+        'BtnNumerosInteiros
         '
-        Me.BtnPrincipal.Location = New System.Drawing.Point(225, 113)
-        Me.BtnPrincipal.Name = "BtnPrincipal"
-        Me.BtnPrincipal.Size = New System.Drawing.Size(239, 117)
-        Me.BtnPrincipal.TabIndex = 0
-        Me.BtnPrincipal.Text = "Clique aqui!"
-        Me.BtnPrincipal.UseVisualStyleBackColor = True
+        Me.BtnNumerosInteiros.Location = New System.Drawing.Point(25, 62)
+        Me.BtnNumerosInteiros.Name = "BtnNumerosInteiros"
+        Me.BtnNumerosInteiros.Size = New System.Drawing.Size(239, 117)
+        Me.BtnNumerosInteiros.TabIndex = 0
+        Me.BtnNumerosInteiros.Text = "Exemplos Números Interiros"
+        Me.BtnNumerosInteiros.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -45,13 +46,23 @@ Partial Class FrmTelaPrincipal02
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "2 - Criando Variáveis"
         '
+        'BtnPontoFlutuante
+        '
+        Me.BtnPontoFlutuante.Location = New System.Drawing.Point(25, 198)
+        Me.BtnPontoFlutuante.Name = "BtnPontoFlutuante"
+        Me.BtnPontoFlutuante.Size = New System.Drawing.Size(239, 117)
+        Me.BtnPontoFlutuante.TabIndex = 0
+        Me.BtnPontoFlutuante.Text = "Exemplos Números Flutuantes"
+        Me.BtnPontoFlutuante.UseVisualStyleBackColor = True
+        '
         'FrmTelaPrincipal02
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.BtnPrincipal)
+        Me.Controls.Add(Me.BtnPontoFlutuante)
+        Me.Controls.Add(Me.BtnNumerosInteiros)
         Me.Name = "FrmTelaPrincipal02"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Aplicação Alô Mundo"
@@ -60,6 +71,7 @@ Partial Class FrmTelaPrincipal02
 
     End Sub
 
-    Friend WithEvents BtnPrincipal As Button
+    Friend WithEvents BtnNumerosInteiros As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents BtnPontoFlutuante As Button
 End Class
