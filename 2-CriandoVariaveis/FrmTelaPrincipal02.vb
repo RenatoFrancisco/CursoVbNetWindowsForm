@@ -36,4 +36,35 @@
         MsgBox("O valor de 5 / 2 é: " & valor, MsgBoxStyle.Critical)
 
     End Sub
+
+    Private Sub BtnConversaoNumeros_Click(sender As Object, e As EventArgs) Handles BtnConversaoNumeros.Click
+        Dim salario As Double
+        salario = 1300.45
+
+        Dim salarioInteiro As Integer
+        salarioInteiro = salario
+
+        MsgBox("O valor do salário é: " & salario & " e do salario inteiro é: " & salarioInteiro)
+
+        Dim salarioGrande As Long
+        salarioGrande = 1000000000000000000
+        MsgBox("O valor do salário longo é: " & salarioGrande)
+
+        Dim salarioPequeno As Short
+        salarioPequeno = 10000
+        MsgBox("O valor do salário pequeno é: " & salarioPequeno)
+
+        Dim salarioMinusculo As SByte
+        salarioMinusculo = 100
+        MsgBox("O valor do salário minúsculo é: " & salarioMinusculo)
+
+        Dim valorDouble As Double
+        valorDouble = 9.36553255
+        MsgBox("O valor da variável double é: " & valorDouble)
+
+        Dim valorDecimal As Decimal
+        valorDecimal = 9.36553255
+        MsgBox("O valor da variável decimal é: " & valorDecimal)
+
+    End Sub
 End Class
