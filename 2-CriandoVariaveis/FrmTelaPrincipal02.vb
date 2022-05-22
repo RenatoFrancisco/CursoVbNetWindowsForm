@@ -67,4 +67,27 @@
         MsgBox("O valor da variável decimal é: " & valorDecimal)
 
     End Sub
+
+    Private Sub BtnResultado_Click(sender As Object, e As EventArgs) Handles BtnResultado.Click
+        Dim numerador As Double
+        Dim denominador As Double
+        Dim resultadoDecimal As Decimal
+        Dim resultadoDouble As Double
+
+        numerador = TxtNumerador.Text
+        denominador = TxtDenominador.Text
+        resultadoDecimal = numerador / denominador
+
+        MsgBox("O resultado (Decimal) entre a divisão de " & numerador & " por " &
+               denominador & " é: " & resultadoDecimal)
+
+
+        resultadoDouble = numerador / denominador
+        MsgBox("O resultado (Double) entre a divisão de " & numerador & " por " &
+               denominador & " é: " & resultadoDouble)
+
+        TxtResultadoDecimal.Text = resultadoDecimal
+        TxtResultadoDouble.Text = resultadoDouble
+
+    End Sub
 End Class
