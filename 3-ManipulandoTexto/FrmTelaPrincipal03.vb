@@ -1,4 +1,7 @@
 ﻿Public Class FrmTelaPrincipal03
+
+    Dim ListaCurso As String
+
     Public Sub New()
 
         ' This call is required by the designer.
@@ -29,5 +32,18 @@
         Dim quintaLetra As Char = Chr(valorChar)
 
         MsgBox("O caracter para o número é " & valorChar & " é " & quintaLetra)
+    End Sub
+
+    Private Sub BtnAdicionar_Click(sender As Object, e As EventArgs) Handles BtnAdicionar.Click
+        Dim cursoDigitado As String = TxtCurso.Text
+
+        ListaCurso = ListaCurso + cursoDigitado + vbCrLf
+        TxtLista.Text = ListaCurso
+        TxtCurso.Text = String.Empty
+
+    End Sub
+
+    Private Sub BtnExibirLista_Click(sender As Object, e As EventArgs) Handles BtnExibirLista.Click
+        MsgBox(ListaCurso)
     End Sub
 End Class

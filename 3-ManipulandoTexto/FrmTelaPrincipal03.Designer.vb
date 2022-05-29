@@ -27,13 +27,18 @@ Partial Class FrmTelaPrincipal03
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BtnChar = New System.Windows.Forms.Button()
         Me.TxtNumeroChar = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.BtnAdicionar = New System.Windows.Forms.Button()
+        Me.TxtLista = New System.Windows.Forms.TextBox()
+        Me.TxtCurso = New System.Windows.Forms.TextBox()
+        Me.BtnExibirLista = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'BtnPrincipal
         '
         Me.BtnPrincipal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnPrincipal.Location = New System.Drawing.Point(24, 86)
-        Me.BtnPrincipal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnPrincipal.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnPrincipal.Name = "BtnPrincipal"
         Me.BtnPrincipal.Size = New System.Drawing.Size(200, 131)
         Me.BtnPrincipal.TabIndex = 0
@@ -67,16 +72,64 @@ Partial Class FrmTelaPrincipal03
         Me.TxtNumeroChar.Size = New System.Drawing.Size(100, 20)
         Me.TxtNumeroChar.TabIndex = 3
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(21, 245)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(121, 13)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Digite seu curso favorito"
+        '
+        'BtnAdicionar
+        '
+        Me.BtnAdicionar.Location = New System.Drawing.Point(300, 240)
+        Me.BtnAdicionar.Name = "BtnAdicionar"
+        Me.BtnAdicionar.Size = New System.Drawing.Size(126, 23)
+        Me.BtnAdicionar.TabIndex = 5
+        Me.BtnAdicionar.Text = "Adicionar Curso"
+        Me.BtnAdicionar.UseVisualStyleBackColor = True
+        '
+        'TxtLista
+        '
+        Me.TxtLista.Location = New System.Drawing.Point(24, 269)
+        Me.TxtLista.Multiline = True
+        Me.TxtLista.Name = "TxtLista"
+        Me.TxtLista.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TxtLista.Size = New System.Drawing.Size(262, 126)
+        Me.TxtLista.TabIndex = 6
+        '
+        'TxtCurso
+        '
+        Me.TxtCurso.Location = New System.Drawing.Point(148, 243)
+        Me.TxtCurso.Name = "TxtCurso"
+        Me.TxtCurso.Size = New System.Drawing.Size(138, 20)
+        Me.TxtCurso.TabIndex = 7
+        '
+        'BtnExibirLista
+        '
+        Me.BtnExibirLista.Location = New System.Drawing.Point(300, 287)
+        Me.BtnExibirLista.Name = "BtnExibirLista"
+        Me.BtnExibirLista.Size = New System.Drawing.Size(126, 23)
+        Me.BtnExibirLista.TabIndex = 8
+        Me.BtnExibirLista.Text = "Exibir Lista Atual"
+        Me.BtnExibirLista.UseVisualStyleBackColor = True
+        '
         'FrmTelaPrincipal03
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(600, 366)
+        Me.ClientSize = New System.Drawing.Size(600, 419)
+        Me.Controls.Add(Me.BtnExibirLista)
+        Me.Controls.Add(Me.TxtCurso)
+        Me.Controls.Add(Me.TxtLista)
+        Me.Controls.Add(Me.BtnAdicionar)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TxtNumeroChar)
         Me.Controls.Add(Me.BtnChar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnPrincipal)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmTelaPrincipal03"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "03 - Manipulando Texto"
@@ -89,4 +142,9 @@ Partial Class FrmTelaPrincipal03
     Friend WithEvents Label1 As Label
     Friend WithEvents BtnChar As Button
     Friend WithEvents TxtNumeroChar As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents BtnAdicionar As Button
+    Friend WithEvents TxtLista As TextBox
+    Friend WithEvents TxtCurso As TextBox
+    Friend WithEvents BtnExibirLista As Button
 End Class
