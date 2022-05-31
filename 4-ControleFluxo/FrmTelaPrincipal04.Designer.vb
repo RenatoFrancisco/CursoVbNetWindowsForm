@@ -27,14 +27,16 @@ Partial Class FrmTelaPrincipal04
         Me.TxtIdade = New System.Windows.Forms.TextBox()
         Me.TxtResultado = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TxtPais = New System.Windows.Forms.TextBox()
+        Me.GrpPais = New System.Windows.Forms.GroupBox()
+        Me.RdbSim = New System.Windows.Forms.RadioButton()
+        Me.RdbNao = New System.Windows.Forms.RadioButton()
+        Me.GrpPais.SuspendLayout()
         Me.SuspendLayout()
         '
         'BtnPrincipal
         '
         Me.BtnPrincipal.Location = New System.Drawing.Point(24, 96)
-        Me.BtnPrincipal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnPrincipal.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnPrincipal.Name = "BtnPrincipal"
         Me.BtnPrincipal.Size = New System.Drawing.Size(222, 41)
         Me.BtnPrincipal.TabIndex = 0
@@ -77,40 +79,56 @@ Partial Class FrmTelaPrincipal04
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Resultado"
         '
-        'Label3
+        'GrpPais
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(174, 31)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(196, 15)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Está acompanhado dos pais?"
+        Me.GrpPais.Controls.Add(Me.RdbNao)
+        Me.GrpPais.Controls.Add(Me.RdbSim)
+        Me.GrpPais.Location = New System.Drawing.Point(180, 5)
+        Me.GrpPais.Name = "GrpPais"
+        Me.GrpPais.Size = New System.Drawing.Size(200, 76)
+        Me.GrpPais.TabIndex = 3
+        Me.GrpPais.TabStop = False
+        Me.GrpPais.Text = "Acompanhado dos pais?"
         '
-        'TxtPais
+        'RdbSim
         '
-        Me.TxtPais.Location = New System.Drawing.Point(177, 61)
-        Me.TxtPais.Name = "TxtPais"
-        Me.TxtPais.Size = New System.Drawing.Size(69, 20)
-        Me.TxtPais.TabIndex = 2
+        Me.RdbSim.AutoSize = True
+        Me.RdbSim.Location = New System.Drawing.Point(18, 36)
+        Me.RdbSim.Name = "RdbSim"
+        Me.RdbSim.Size = New System.Drawing.Size(42, 17)
+        Me.RdbSim.TabIndex = 0
+        Me.RdbSim.TabStop = True
+        Me.RdbSim.Text = "Sim"
+        Me.RdbSim.UseVisualStyleBackColor = True
+        '
+        'RdbNao
+        '
+        Me.RdbNao.AutoSize = True
+        Me.RdbNao.Location = New System.Drawing.Point(91, 36)
+        Me.RdbNao.Name = "RdbNao"
+        Me.RdbNao.Size = New System.Drawing.Size(45, 17)
+        Me.RdbNao.TabIndex = 0
+        Me.RdbNao.TabStop = True
+        Me.RdbNao.Text = "Não"
+        Me.RdbNao.UseVisualStyleBackColor = True
         '
         'FrmTelaPrincipal04
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(600, 366)
+        Me.Controls.Add(Me.GrpPais)
         Me.Controls.Add(Me.TxtResultado)
-        Me.Controls.Add(Me.TxtPais)
         Me.Controls.Add(Me.TxtIdade)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnPrincipal)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmTelaPrincipal04"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Aplicação Alô Mundo"
+        Me.GrpPais.ResumeLayout(False)
+        Me.GrpPais.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -121,6 +139,7 @@ Partial Class FrmTelaPrincipal04
     Friend WithEvents TxtIdade As TextBox
     Friend WithEvents TxtResultado As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TxtPais As TextBox
+    Friend WithEvents GrpPais As GroupBox
+    Friend WithEvents RdbSim As RadioButton
+    Friend WithEvents RdbNao As RadioButton
 End Class
