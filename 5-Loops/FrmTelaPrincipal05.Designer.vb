@@ -28,14 +28,17 @@ Partial Class FrmTelaPrincipal05
         Me.LblRendimento = New System.Windows.Forms.Label()
         Me.TxtPrincipal = New System.Windows.Forms.TextBox()
         Me.TxtRendimento = New System.Windows.Forms.TextBox()
+        Me.LblPeridos = New System.Windows.Forms.Label()
+        Me.TxtPeriodos = New System.Windows.Forms.TextBox()
+        Me.TxtExtrato = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'BtnPrincipal
         '
-        Me.BtnPrincipal.Location = New System.Drawing.Point(24, 176)
-        Me.BtnPrincipal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnPrincipal.Location = New System.Drawing.Point(452, 122)
+        Me.BtnPrincipal.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnPrincipal.Name = "BtnPrincipal"
-        Me.BtnPrincipal.Size = New System.Drawing.Size(251, 49)
+        Me.BtnPrincipal.Size = New System.Drawing.Size(101, 33)
         Me.BtnPrincipal.TabIndex = 0
         Me.BtnPrincipal.Text = "Calcular Valor"
         Me.BtnPrincipal.UseVisualStyleBackColor = True
@@ -83,19 +86,47 @@ Partial Class FrmTelaPrincipal05
         Me.TxtRendimento.Size = New System.Drawing.Size(100, 20)
         Me.TxtRendimento.TabIndex = 3
         '
-        'FrmTelaPrincipal05vb
+        'LblPeridos
+        '
+        Me.LblPeridos.AutoSize = True
+        Me.LblPeridos.Location = New System.Drawing.Point(305, 93)
+        Me.LblPeridos.Name = "LblPeridos"
+        Me.LblPeridos.Size = New System.Drawing.Size(50, 13)
+        Me.LblPeridos.TabIndex = 2
+        Me.LblPeridos.Text = "Períodos"
+        '
+        'TxtPeriodos
+        '
+        Me.TxtPeriodos.Location = New System.Drawing.Point(308, 129)
+        Me.TxtPeriodos.Name = "TxtPeriodos"
+        Me.TxtPeriodos.Size = New System.Drawing.Size(100, 20)
+        Me.TxtPeriodos.TabIndex = 3
+        '
+        'TxtExtrato
+        '
+        Me.TxtExtrato.Location = New System.Drawing.Point(24, 176)
+        Me.TxtExtrato.Multiline = True
+        Me.TxtExtrato.Name = "TxtExtrato"
+        Me.TxtExtrato.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TxtExtrato.Size = New System.Drawing.Size(529, 162)
+        Me.TxtExtrato.TabIndex = 3
+        '
+        'FrmTelaPrincipal05
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(300, 264)
+        Me.ClientSize = New System.Drawing.Size(583, 368)
+        Me.Controls.Add(Me.TxtPeriodos)
         Me.Controls.Add(Me.TxtRendimento)
+        Me.Controls.Add(Me.TxtExtrato)
         Me.Controls.Add(Me.TxtPrincipal)
+        Me.Controls.Add(Me.LblPeridos)
         Me.Controls.Add(Me.LblRendimento)
         Me.Controls.Add(Me.LblPrincipal)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnPrincipal)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Name = "FrmTelaPrincipal05vb"
+        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Name = "FrmTelaPrincipal05"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Aplicação Alô Mundo"
         Me.ResumeLayout(False)
@@ -109,4 +140,7 @@ Partial Class FrmTelaPrincipal05
     Friend WithEvents LblRendimento As Label
     Friend WithEvents TxtPrincipal As TextBox
     Friend WithEvents TxtRendimento As TextBox
+    Friend WithEvents LblPeridos As Label
+    Friend WithEvents TxtPeriodos As TextBox
+    Friend WithEvents TxtExtrato As TextBox
 End Class
