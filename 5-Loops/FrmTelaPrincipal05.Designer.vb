@@ -22,7 +22,7 @@ Partial Class FrmTelaPrincipal05
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.BtnPrincipal = New System.Windows.Forms.Button()
+        Me.BtnWhile = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.LblPrincipal = New System.Windows.Forms.Label()
         Me.LblRendimento = New System.Windows.Forms.Label()
@@ -30,18 +30,20 @@ Partial Class FrmTelaPrincipal05
         Me.TxtRendimento = New System.Windows.Forms.TextBox()
         Me.LblPeridos = New System.Windows.Forms.Label()
         Me.TxtPeriodos = New System.Windows.Forms.TextBox()
-        Me.TxtExtrato = New System.Windows.Forms.TextBox()
+        Me.TxtExtratoWhile = New System.Windows.Forms.TextBox()
+        Me.BtnFor = New System.Windows.Forms.Button()
+        Me.TxtExtratoFor = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
-        'BtnPrincipal
+        'BtnWhile
         '
-        Me.BtnPrincipal.Location = New System.Drawing.Point(452, 122)
-        Me.BtnPrincipal.Margin = New System.Windows.Forms.Padding(2)
-        Me.BtnPrincipal.Name = "BtnPrincipal"
-        Me.BtnPrincipal.Size = New System.Drawing.Size(101, 33)
-        Me.BtnPrincipal.TabIndex = 0
-        Me.BtnPrincipal.Text = "Calcular Valor"
-        Me.BtnPrincipal.UseVisualStyleBackColor = True
+        Me.BtnWhile.Location = New System.Drawing.Point(27, 174)
+        Me.BtnWhile.Margin = New System.Windows.Forms.Padding(2)
+        Me.BtnWhile.Name = "BtnWhile"
+        Me.BtnWhile.Size = New System.Drawing.Size(141, 33)
+        Me.BtnWhile.TabIndex = 0
+        Me.BtnWhile.Text = "Calcular Valor com WHILE"
+        Me.BtnWhile.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -102,29 +104,50 @@ Partial Class FrmTelaPrincipal05
         Me.TxtPeriodos.Size = New System.Drawing.Size(100, 20)
         Me.TxtPeriodos.TabIndex = 3
         '
-        'TxtExtrato
+        'TxtExtratoWhile
         '
-        Me.TxtExtrato.Location = New System.Drawing.Point(24, 176)
-        Me.TxtExtrato.Multiline = True
-        Me.TxtExtrato.Name = "TxtExtrato"
-        Me.TxtExtrato.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TxtExtrato.Size = New System.Drawing.Size(529, 162)
-        Me.TxtExtrato.TabIndex = 3
+        Me.TxtExtratoWhile.Location = New System.Drawing.Point(24, 231)
+        Me.TxtExtratoWhile.Multiline = True
+        Me.TxtExtratoWhile.Name = "TxtExtratoWhile"
+        Me.TxtExtratoWhile.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TxtExtratoWhile.Size = New System.Drawing.Size(412, 162)
+        Me.TxtExtratoWhile.TabIndex = 3
+        '
+        'BtnFor
+        '
+        Me.BtnFor.Location = New System.Drawing.Point(456, 174)
+        Me.BtnFor.Margin = New System.Windows.Forms.Padding(2)
+        Me.BtnFor.Name = "BtnFor"
+        Me.BtnFor.Size = New System.Drawing.Size(126, 33)
+        Me.BtnFor.TabIndex = 0
+        Me.BtnFor.Text = "Calcular Valor co FOR"
+        Me.BtnFor.UseVisualStyleBackColor = True
+        '
+        'TxtExtratoFor
+        '
+        Me.TxtExtratoFor.Location = New System.Drawing.Point(456, 231)
+        Me.TxtExtratoFor.Multiline = True
+        Me.TxtExtratoFor.Name = "TxtExtratoFor"
+        Me.TxtExtratoFor.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TxtExtratoFor.Size = New System.Drawing.Size(412, 162)
+        Me.TxtExtratoFor.TabIndex = 3
         '
         'FrmTelaPrincipal05
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(583, 368)
+        Me.ClientSize = New System.Drawing.Size(882, 424)
         Me.Controls.Add(Me.TxtPeriodos)
         Me.Controls.Add(Me.TxtRendimento)
-        Me.Controls.Add(Me.TxtExtrato)
+        Me.Controls.Add(Me.TxtExtratoFor)
+        Me.Controls.Add(Me.TxtExtratoWhile)
         Me.Controls.Add(Me.TxtPrincipal)
         Me.Controls.Add(Me.LblPeridos)
         Me.Controls.Add(Me.LblRendimento)
         Me.Controls.Add(Me.LblPrincipal)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.BtnPrincipal)
+        Me.Controls.Add(Me.BtnFor)
+        Me.Controls.Add(Me.BtnWhile)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmTelaPrincipal05"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -134,7 +157,7 @@ Partial Class FrmTelaPrincipal05
 
     End Sub
 
-    Friend WithEvents BtnPrincipal As Button
+    Friend WithEvents BtnWhile As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents LblPrincipal As Label
     Friend WithEvents LblRendimento As Label
@@ -142,5 +165,7 @@ Partial Class FrmTelaPrincipal05
     Friend WithEvents TxtRendimento As TextBox
     Friend WithEvents LblPeridos As Label
     Friend WithEvents TxtPeriodos As TextBox
-    Friend WithEvents TxtExtrato As TextBox
+    Friend WithEvents TxtExtratoWhile As TextBox
+    Friend WithEvents BtnFor As Button
+    Friend WithEvents TxtExtratoFor As TextBox
 End Class
