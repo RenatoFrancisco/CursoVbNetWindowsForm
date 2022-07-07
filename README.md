@@ -1,2 +1,2 @@
 # CursoVbNetWindowsForm
-Curso sobre VB .NET da plataforma Alura
+Curso sobre VB .NET da plataforma Alura.
